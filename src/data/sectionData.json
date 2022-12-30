@@ -1,0 +1,226 @@
+[
+    {
+        "category":"Hair",
+        "title": "Hair Cutting",
+        "id": "001",
+        "image": "images/hairCutting.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        }
+    },
+    {
+        "category":"Hair",
+        "title": "Hair Straightening",
+        "id": "002",
+        "image": "images/hairStraightning.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        }
+    },
+    {   
+        "category":"Pedicure & Manicure",
+        "title": "Pedicure",
+        "id": "003",
+        "image": "images/pedicure.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        }
+    },
+    {   
+        "category":"Pedicure & Manicure",
+        "title": "images/manicure.jpe",
+        "id": "004",
+        "image": "images/manicure.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        }
+    },
+    {   
+        "category":"Face",
+        "title": "Face Packg",
+        "id": "005",
+        "image": "images/face_pack.png",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        }
+    },
+    {   
+        "category":"Face",
+        "title": "Facial",
+        "id": "006",
+        "image": "images/facial.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        }
+    },
+    {   
+        "category":"Threading",
+        "title": "Eyebrow Threading",
+        "id": "007",
+        "image": "images/eyebrow_threading.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        }
+    },
+    {   
+        "category":"Threading",
+        "title": "Upper Lips Threading",
+        "id": "008",
+        "image": "images/upperLips_threading.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        }
+    }
+]

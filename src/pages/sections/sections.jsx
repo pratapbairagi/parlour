@@ -2,9 +2,16 @@ import FaceSection from "./faceSection"
 import HairSection from "./hairSection"
 import PedicureMenicure from "./pedicure_menicure"
 import "./section.css"
-import Threading from "./threading"
+import Threading from "./threading";
+import sectionData from "../../data/sectionData.json";
 
 const Sections = () =>{
+    const hairData = sectionData.filter(v=>v.category == "Hair");
+    const faceData = sectionData.filter(v=>v.category == "Face");
+    const threadingData = sectionData.filter(v=>v.category == "Threading");
+    const pediManiData = sectionData.filter(v=>v.category == "Pedicure & Manicure");
+
+
     return(
         <div className="container-fluid p-0">
         <div className="container-fluid sectionContainer d-flex flex-column">
@@ -35,10 +42,10 @@ const Sections = () =>{
 
         </div>
 
-            <HairSection id={"hairSection"}/>
-            <PedicureMenicure id={"pediManiSection"}/>
-            <FaceSection id={"faceSection"}/>
-            <Threading id={"threadingSection"}/>
+           {faceData.length > 0 &&  <FaceSection id={"faceSection"} data={faceData}/> }
+           {hairData.length > 0 &&  <FaceSection id={"faceSection"} data={hairData}/> }
+           {threadingData.length > 0 &&  <FaceSection id={"faceSection"} data={threadingData}/> }
+           {pediManiData.length > 0 &&  <FaceSection id={"faceSection"} data={pediManiData}/> }
 
         </div>
     )
