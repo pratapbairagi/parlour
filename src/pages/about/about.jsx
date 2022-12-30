@@ -6,7 +6,8 @@ const About = () => {
             <div className="row d-flex flex-wrap justify-content-center">
 
                 <div className="col col-12 col-md-10 col-lg-5 col-xl-4 p-1" style={{ aspectRatio: "1/.96", boxShadow: "0 0 2px grey" }}>
-                    <img src="images/centerImage.png" style={{ width: "100%", height: "100%", borderRadius: "50%", border: "3px double pink" }} alt="" />
+                    <img src="images/centerImage.jpeg
+                    " style={{ width: "100%", height: "100%", borderRadius: "50%", border: "3px double pink" }} alt="" />
                 </div>
 
                 <div className="col col-12 col-md-10 col-lg-5 col-xl-4 p-3" style={{ background: "aliceblue", boxShadow: "0 0 2px grey", aspectRatio:"1/.9" }}>

@@ -43,9 +43,9 @@ const Sections = () =>{
         </div>
 
            {faceData.length > 0 &&  <FaceSection id={"faceSection"} data={faceData}/> }
-           {hairData.length > 0 &&  <FaceSection id={"faceSection"} data={hairData}/> }
-           {threadingData.length > 0 &&  <FaceSection id={"faceSection"} data={threadingData}/> }
-           {pediManiData.length > 0 &&  <FaceSection id={"faceSection"} data={pediManiData}/> }
+           {hairData.length > 0 &&  <FaceSection id={"hairSection"} data={hairData}/> }
+           {threadingData.length > 0 &&  <FaceSection id={"threadingSection"} data={threadingData}/> }
+           {pediManiData.length > 0 &&  <FaceSection id={"pediManiSection"} data={pediManiData}/> }
 
         </div>
     )
