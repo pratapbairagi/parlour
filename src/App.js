@@ -7,19 +7,23 @@ import Contacts from './pages/contact/contact';
 import Sections from './pages/sections/sections';
 import PageNotFound from './pages/page_not_found';
 import Header from './components/header/header';
+import { useState } from 'react';
+
 
 function App() {
+  const [search, setSearch] = useState([])
+
   return (
     <div className="App">
       <BrowserRouter>
-      <Header/>
+      <Header searchData={setSearch}/>
       {/* <Layout/> */}
       <Routes>
-      <Route exact path='/' element={<Layout/>} />
+      <Route exact path='/' element={<Layout search={search}/>} />
         {/* <Route path='/home' element={<Home/>} /> */}
         <Route path='/about' element={<About/>} />
         <Route path='/contact' element={<Contacts/>} />
-        <Route path='/section' element={<Sections/>} />
+        <Route path='/section' element={<Sections search={search}/>} />
         <Route path='*' element={<PageNotFound/>} />
 
       </Routes>

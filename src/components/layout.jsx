@@ -3,12 +3,12 @@ import Home from "../pages/home/home";
 import Sections from "../pages/sections/sections";
 
 
-const Layout = () =>{
+const Layout = ({search}) =>{
     return(
         <>
             {/* <Header/> */}
             <Home/>
-            <Sections/>
+            <Sections search={search}/>
             <About/>
         </>
     )

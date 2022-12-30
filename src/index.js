@@ -5,11 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fontsource/dosis";
+// import { AppProvider } from './context/appProvider';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* <AppProvider> */}
     <App />
+    {/* </AppProvider> */}
   </React.StrictMode>
 );
 

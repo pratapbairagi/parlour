@@ -10,7 +10,7 @@ import ToggleCancelBtn from "../atoms/toggleCancelBtn";
 import MidNavLogo from "../atoms/midNavLogo";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({searchData}) => {
 
     let [toggle, setToggle] = useState("none")
 
@@ -43,7 +43,7 @@ const Header = () => {
                 <div className="left_nav col col-12 d-flex justify-content-between">
                     <NavLogo />
                     <div className="search_handBurger_container d-flex justify-content-end gap-2 align-items-center">
-                        <SearchBar />
+                        <SearchBar searchData={searchData}/>
                         <ToggleBtn />
                     </div>
                 </div>

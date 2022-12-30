@@ -1,11 +1,14 @@
 import FaceSection from "./faceSection"
-import HairSection from "./hairSection"
-import PedicureMenicure from "./pedicure_menicure"
 import "./section.css"
-import Threading from "./threading";
 import sectionData from "../../data/sectionData.json";
+// import { useContext } from "react";
+// import { AppContext, AppProvider } from "../../context/appProvider";
 
-const Sections = () =>{
+const Sections = ({search}) =>{
+
+    // const dataFromContext = useContext(AppContext)
+
+
     const hairData = sectionData.filter(v=>v.category == "Hair");
     const faceData = sectionData.filter(v=>v.category == "Face");
     const threadingData = sectionData.filter(v=>v.category == "Threading");
@@ -41,11 +44,13 @@ const Sections = () =>{
             
 
         </div>
-
-           {faceData.length > 0 &&  <FaceSection id={"faceSection"} data={faceData}/> }
-           {hairData.length > 0 &&  <FaceSection id={"hairSection"} data={hairData}/> }
-           {threadingData.length > 0 &&  <FaceSection id={"threadingSection"} data={threadingData}/> }
-           {pediManiData.length > 0 &&  <FaceSection id={"pediManiSection"} data={pediManiData}/> }
+        
+            {search.length > 0 &&  <FaceSection id={"searched"} data={search}/> }
+            
+           {search.length <= 0 && faceData.length > 0 &&  <FaceSection id={"faceSection"} data={faceData}/> }
+           {search.length <= 0 && hairData.length > 0 &&  <FaceSection id={"hairSection"} data={hairData}/> }
+           {search.length <= 0 && threadingData.length > 0 &&  <FaceSection id={"threadingSection"} data={threadingData}/> }
+           {search.length <= 0 && pediManiData.length > 0 &&  <FaceSection id={"pediManiSection"} data={pediManiData}/> }
 
         </div>
     )
