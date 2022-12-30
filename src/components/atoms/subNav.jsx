@@ -4,19 +4,19 @@ const SubNav = ({subNavToggleData}) =>{
     return(
             <ul className="subNav" style={{display:`${subNavToggleData}`}}>
                                 <li>
-                                    <img src="/eyebrow_logo.png" alt="" />
+                                    <img src="/eyebrow_logo.jpeg" alt="" />
                                     <span> Eyebrow </span>
                                 </li>
                                 <li>
-                                <img src="/face_beauty_logo.png" alt="" />
+                                <img src="/face_beauty_logo.jpeg" alt="" />
                                     <span> Face </span>
                                 </li>
                                 <li>
-                                <img src="/hairCutting_logo.png" style={{height:"28px"}} alt="" />
+                                <img src="/hairCutting_logo.jpeg" style={{height:"28px"}} alt="" />
                                    <span> Hair </span>
                                 </li>
                                 <li>
-                                <img src="/nail_logo2.png" style={{height:"28px"}} alt="" />
+                                <img src="/nail_logo2.jpeg" style={{height:"28px"}} alt="" />
                                    <span> Nail </span>
                                 </li>
                             </ul>
