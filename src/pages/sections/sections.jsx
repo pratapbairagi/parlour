@@ -18,22 +18,22 @@ const Sections = () =>{
             <h3>Category</h3>
             <div className="d-flex sectionContainerInner justify-content-lg-center justify-content-xl-center">
                 <a href="#faceSection" className="setctionContents">
-                    <img src="/facial_image.jpeg" alt="" />
+                    <img src="images/facial_image_logo.jpeg" alt="" />
                 <span>face</span>
                 </a>
 
                 <a href="#threadingSection" className="setctionContents">
-                <img src="/eyebrow_image.jpeg" alt="" />
+                <img src="images/eyebrow_image.jpeg" alt="" />
                 <span>Threading</span>
                 </a>
 
                 <a href="#pediManiSection" className="setctionContents">
-                <img src="/nailBrush_image.jpeg" alt="" />
+                <img src="images/nailBrush_image.jpeg" alt="" />
                 <span>Pedicure & Manicure</span>
                 </a>
 
                 <a href="#hairSection" className="setctionContents">
-                <img src="/hairCut.jpeg"  alt="" />
+                <img src="images/hairCut.jpeg"  alt="" />
                 <span>Hair</span>
                 </a>
 
