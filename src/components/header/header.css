@@ -22,13 +22,14 @@
     width: 100% !important;
     gap: 0 !important;
     right: 0 !important;
-    height: 10vh !important;
+    height: max-content !important;
     align-items: center !important;
     bottom: 0;
     display: flex !important;
     transform: translateX(0);
+    z-index: 4;
     background-color: aliceblue;
-    box-shadow: 0 -1px 2px gainsboro;
+    box-shadow: 0 -1px 2px rgb(222, 235, 248);
 }
 
 .mid_nav {
@@ -65,7 +66,7 @@
     width: 60% !important;
     height: 40px !important;
     border-radius: 22px;
-    background-color: white;
+    background-color: transparent;
     position: relative;
     z-index: 2;
     transform: translateY(-50%) !important;
@@ -80,8 +81,8 @@
     width: 100% !important;
     border-radius: 50%;
     aspect-ratio: 1/1 !important;
-    background-color: white;
-    border-top: 2px solid rgb(250, 171, 184);
+    background-color: aliceblue;
+    border-top: 2px solid rgb(222, 235, 248);
 }
 
 .active li {
