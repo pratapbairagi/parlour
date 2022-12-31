@@ -10,11 +10,11 @@ const FaceSection = ({ id, data }) => {
     //     window.open(`https://wa.me/8287889123?text=${`title : ${e.title}, category : ${e.category}, now : ${ date.toLocaleString()}`}`)
     // }
 
-    return (<div id={id} className="container-fluid faceSection_container" style={{ padding: "8px 0 32px 0" }}>
-        <h4 className="mt-1" style={{ width: "100%", boxShadow: "0 0 2px grey", fontSize: "200%", padding: "6px 16px", color: "pink", borderRadius: "4px 15px 4px 15px", fontWeight: "600", letterSpacing: "1px" }}>{data[0].category}</h4>
-        <div className={`comtainer-fluid ${params.pathname == "/section" ? "d-block" : "d-flex"}`} style={{ overflow: "scroll" }}>
+    return (<div id={id} className="container-fluid faceSection_container" style={{ padding: "8px 4px 10px 4px" }}>
+        <h4 className="mt-1 mb-1" style={{ width: "100%", borderLeft:"2px solid pink", fontSize: "150%", padding: "2px 6px", color: "pink", fontWeight: "600", letterSpacing: "1px" }}>{data[0].category}</h4>
+        <div className={`container-fluid ${params.pathname == "/section" ? "d-block" : "d-flex"}`} style={{ overflow: "scroll", padding:"0", margin:"0" }}>
             {data.map((v, i) => {
-                return <div key={i} className="row d-flex flex-wrap mt-1" style={{ background: `${i % 2 === 0 ? "white" : params.pathname == "/section" ? "aliceblue" : "white"}`, padding: "12px 4px", display: "flex", justifyContent: "center", minWidth: "240px", width: `${params.pathname == "/section" ? "" : "30%"}` }}>
+                return <div key={i} className="row d-flex flex-wrap mt-0" style={{ background: `${i % 2 === 0 ? "white" : params.pathname == "/section" ? "aliceblue" : "white"}`, padding: "12px 4px", display: "flex", justifyContent: "center", minWidth: "240px", width: `${params.pathname == "/section" ? "" : "30%"}` }}>
                     <NavLink  to={`/view/${v.id}`} className={`col ${params.pathname == "/section" && "col-12 col-md-10 col-lg-6 col-xl-5 p-2"} order-1 order-md-1  ${i % 2 === 0 ? "order-lg-2 order-xl-2" : "order-lg-1 order-xl-1"}`} style={{ border: "2px solid pink" }}>
                         <span style={{ padding: "2px 8px", background: "pink", fontWeight: "500", color: "white" }}>{v.title}</span>
                         <img src={v.image} style={{ width: "100%", aspectRaio: "1/1" }} alt="" />
