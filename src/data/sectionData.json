@@ -29,8 +29,64 @@
     },
     {
         "category":"Hair",
-        "title": "Hair Straightening",
+        "title": "Hair Curl",
         "id": "002",
+        "image": "images/hair_curl.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        }
+    },
+    {
+        "category":"Hair",
+        "title": "Hair Coloring",
+        "id": "003",
+        "image": "images/hair_coloring.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        }
+    },
+    {
+        "category":"Hair",
+        "title": "Hair Straightening",
+        "id": "004",
         "image": "images/hairStraightning.jpeg",
         "text": "",
         "ingredients": [
@@ -58,7 +114,7 @@
     {   
         "category":"Pedicure & Manicure",
         "title": "Pedicure",
-        "id": "003",
+        "id": "005",
         "image": "images/pedicure.jpeg",
         "text": "",
         "ingredients": [
@@ -86,7 +142,7 @@
     {   
         "category":"Pedicure & Manicure",
         "title": "Manicure",
-        "id": "004",
+        "id": "006",
         "image": "images/manicure.jpeg",
         "text": "",
         "ingredients": [
@@ -114,7 +170,7 @@
     {   
         "category":"Face",
         "title": "Face Pack",
-        "id": "005",
+        "id": "007",
         "image": "images/face_pack.jpeg",
         "text": "",
         "ingredients": [
@@ -142,8 +198,36 @@
     {   
         "category":"Face",
         "title": "Facial",
-        "id": "006",
+        "id": "008",
         "image": "images/facial.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        }
+    },
+    {   
+        "category":"Face",
+        "title": "Face Massage",
+        "id": "009",
+        "image": "images/face_massage.jpeg",
         "text": "",
         "ingredients": [
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
@@ -170,7 +254,7 @@
     {   
         "category":"Threading",
         "title": "Eyebrow Threading",
-        "id": "007",
+        "id": "010",
         "image": "images/eyebrow_threading.jpeg",
         "text": "",
         "ingredients": [
@@ -198,7 +282,7 @@
     {   
         "category":"Threading",
         "title": "Upper Lips Threading",
-        "id": "008",
+        "id": "011",
         "image": "images/upperLips_threading.jpeg",
         "text": "",
         "ingredients": [

@@ -8,6 +8,7 @@ import Sections from './pages/sections/sections';
 import PageNotFound from './pages/page_not_found';
 import Header from './components/header/header';
 import { useState } from 'react';
+import DetailsView from './pages/detailsView';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       {/* <Layout/> */}
       <Routes>
       <Route exact path='/' element={<Layout search={search}/>} />
+      <Route exact path='/view/:id' element={<DetailsView/>} />
+
         {/* <Route path='/home' element={<Home/>} /> */}
         <Route path='/about' element={<About/>} />
         <Route path='/contact' element={<Contacts/>} />
