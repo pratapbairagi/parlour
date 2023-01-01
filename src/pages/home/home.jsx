@@ -6,7 +6,7 @@ const Home = () => {
 
             <div className="row h-100 justify-content-end align-items-end align-items-md-center align-items-lg-center align-items-xl-center" >
                 <div className="col col-12 col-md-6 col-lg-6 col-xl-6" style={{ display: "flex", justifyContent: "center" }}>
-                    <img src="/images/printed_girl.png" style={{ height: "90%" }} alt="" />
+                    <img src="/images/printed_girl.jpeg" style={{ height: "90%" }} alt="" />
                 </div>
                 <div className="col col-12 col-md-6 col-lg-6 col-xl-6" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", position: "relative" }}>
                     <h4 className="text home_heading" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", columnGap: "8px", width: "100%" }}>
@@ -18,9 +18,7 @@ const Home = () => {
                         <button className="btn" style={{ borderRadius: "20px", border: "2px double white", fontWeight: "700", color: "white", background: "rgb(203,4,115)", padding: "4px 20px" }}>Contact</button>
                         <button className="btn" style={{ borderRadius: "20px", border: "2px double grey", fontWeight: "700", color: "grey", background: "white", padding: "4px 20px" }}>Explore</button>
                     </div>
-                    {/* <svg style={{ position: "absolute", bottom: "0", right: "0", width: "100%\\px" }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                        <path fill="rgb(203,4,115)" fillOpacity="1" d="M0,320L120,304C240,288,480,256,720,213.3C960,171,1200,117,1320,90.7L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-                    </svg> */}
+                  
                 </div>
 
             </div>
