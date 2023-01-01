@@ -3,6 +3,9 @@
     height: 100%;
     min-height: 10vh;
 }
+/* .home_heading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} */
 
 .navbar_container {
     display: flex;
@@ -10,6 +13,11 @@
     padding: 8px 16px;
     width: 100% !important;
     box-shadow: 0 0 2px grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 10vh;
 }
 
 .left_nav {
@@ -18,18 +26,18 @@
 }
 
 .mid_nav_container {
-    padding: 0 !important;
+    padding: 2px 0 !important;
     width: 100% !important;
     gap: 0 !important;
     right: 0 !important;
     height: max-content !important;
     align-items: center !important;
-    bottom: 0;
+    bottom: -1px;
     display: flex !important;
     transform: translateX(0);
-    z-index: 4;
     background-color: aliceblue;
     box-shadow: 0 -1px 2px rgb(222, 235, 248);
+    z-index: 3;
 }
 
 .mid_nav {
@@ -125,7 +133,28 @@
     height:auto;
 }
 
+.homeBannerContainer{
+    background-image: url('/public/images/mobileSize_banner3.jpg');
+    background-repeat: no-repeat;
+    background-position:top 10%, left 10%;
+    background-size: cover;
+    height: 80vh !important;
+}
+.bannerText{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 @media only screen and (min-width: 768px) {
+    .homeBannerContainer{
+        background-image: url('/public/images/tabSizeBanner.png');
+        background-repeat: no-repeat;
+        background-position:bottom, left;
+        background-size: cover;
+        min-height: 90vh;
+    }
     .navbar_container{
         width: 100% !important;
         box-shadow: 0 0 2px grey;
@@ -229,15 +258,22 @@
     top: 0;
     left: 0;
 }
-.homeBannerContainer .row .col img{
+/* .homeBannerContainer .row .col img{
     max-width: 35%;
     width: 40% !important;
     top: 0 !important;
-}
+} */
 }
 
 @media only screen and (min-width: 992px) {
-    
+    .navbar_container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        height: 10vh;
+        background-color: rgba(0,0,0, .3);
+    }
     .mid_nav_container {
         width: 100% !important;
         padding: 2px 0 !important;
@@ -247,7 +283,7 @@
         flex-direction: row !important;
         height: max-content !important;
         align-items: center !important;
-        top: 10vh;
+        top:5vh;
         transform: translateX(0);
         box-shadow: none;
         background-color: transparent;
@@ -255,13 +291,16 @@
     }
 
     .mid_nav {
-        padding: 4px 16px !important;
+        padding: 4px 32px !important;
+        border-radius: 25px;
         display: flex;
         flex-direction: row !important;
-        width: 100% !important;
+        width: max-content !important;
         gap: 4px;
         box-shadow: none;
+        margin:  0 auto !important;
         box-shadow: 0 1px 1px rgb(215, 215, 215);
+        background: linear-gradient(to bottom, whitesmoke, white);
     }
 
     .midNav_image {
@@ -277,14 +316,19 @@
     .mid_nav li {
         width: 100% !important;
         padding: 4px 10px !important;
-        background-color: white !important;
-        color: grey;
+        background-color: transparent !important;
+        color: pink;
         font-size: 13px;
+    }
+    .mid_nav li:hover{
+        background-color: black !important;
+        border-radius: 25px;
     }
     .active{
         position: relative !important;
     }
     .active li{
+        color: rgb(244, 150, 166) !important;
         position: relative;
         z-index: 2;
     }
@@ -293,7 +337,7 @@
         width: 100% !important;
         height: 2px;
         bottom: 0% !important;
-        background-color: grey !important;
+        background-color: pink !important;
         animation: activeNav 3s ease-in-out;
         position: absolute;
         bottom: 0;
@@ -301,27 +345,13 @@
         z-index: 1;
     }
     .homeBannerContainer{
-        min-height: 50vh;
+        background-image: url('/public/images/tabSizeBanner.png');
+        background-repeat: no-repeat;
+        background-position:bottom, left;
+        background-size: cover;
+        min-height: 90vh;
     }
-    .homeBannerContainer .row{
-        padding-bottom: 5% !important;
-        padding-top: 5% !important;
-
-    }
-    .homeBannerContainer .row .col{
-        max-height: max-content !important;
-        margin-top: 0 !important;
-        row-gap: 16px;
-    }
-    .homeBannerContainer .row .col img{
-       width: 30% !important;
-       max-width: 200px !important;
-        /* max-width: 37% ; */
-        bottom: 0 !important;
-    }
-    .homeBannerContainer .row button{
-        max-height: 32px;
-    }
+  
     @keyframes activeNav {
         0%{
                 width: 0% !important;

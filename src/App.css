@@ -29,6 +29,7 @@
   text-align: center !important;
   display: grid;
   left: calc( 50% - 65px); 
-  bottom: -7%;
+  bottom: -4%;
   z-index: 1;
+  display: none;
 }

@@ -12,7 +12,7 @@ const Sections = ({search}) =>{
 
     return(
         <div className="container-fluid p-0">
-        <div className="container-fluid sectionContainer d-flex flex-column">
+        <div className="container-fluid sectionContainer d-flex flex-column mt-lg-4 mt-xl-4">
             <h3>Category</h3>
             <div className="d-flex sectionContainerInner justify-content-lg-center justify-content-xl-center">
                 <a href="#Face" className="setctionContents">
