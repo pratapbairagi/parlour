@@ -20,10 +20,10 @@
   position:absolute;
   font-weight:700; 
   background:white;
-  color:red;
-  width:max-content;
-  min-width: 130px;
-  border: 4px double pink;
+  color:rgb(203,4,115);
+  width:max-content !important;
+  min-width: 130px !important;
+  border: 4px double rgb(203,4,115);
   padding: 3px 0;
   box-shadow:  0 0 0 4px white;
   text-align: center !important;
@@ -31,5 +31,11 @@
   left: calc( 50% - 65px); 
   bottom: -4%;
   z-index: 1;
-  display: none;
+}
+@media only screen and (min-width: 992px) {
+.homeBannerContainer h2{
+  bottom: -9%;
+  
+
+}
 }

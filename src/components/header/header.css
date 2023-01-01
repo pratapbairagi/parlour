@@ -134,11 +134,17 @@
 }
 
 .homeBannerContainer{
-    background-image: url('/public/images/mobileSize_banner3.jpg');
+    /* background-image: url('/public/images/bannerBackground1.jpg'); */
     background-repeat: no-repeat;
     background-position:top 10%, left 10%;
     background-size: cover;
-    height: 80vh !important;
+    height: 70vh !important;
+}
+.homeBannerContainer .col{
+    height: 50% !important;
+}
+.homeBannerContainer .row .col:nth-child(1){
+    padding-top: 2% !important;
 }
 .bannerText{
     display: -webkit-box;
@@ -149,11 +155,14 @@
 
 @media only screen and (min-width: 768px) {
     .homeBannerContainer{
-        background-image: url('/public/images/tabSizeBanner.png');
+        /* background-image: url('/public/images/bannerBackground1.jpg'); */
         background-repeat: no-repeat;
         background-position:bottom, left;
         background-size: cover;
-        min-height: 90vh;
+        min-height: 50vh;
+    }
+    .homeBannerContainer .col{
+        height: 90% !important;
     }
     .navbar_container{
         width: 100% !important;
@@ -346,12 +355,17 @@
         left: 0;
         z-index: 1;
     }
+
+/* home */
     .homeBannerContainer{
-        background-image: url('/public/images/tabSizeBanner.png');
+        /* background-image: url('/public/images/tabSizeBanner.png'); */
         background-repeat: no-repeat;
         background-position:bottom, left;
         background-size: cover;
-        min-height: 90vh;
+        height: 70vh;
+    }
+    .homeBannerContainer .col{
+        height: 90% !important;
     }
   
     @keyframes activeNav {
@@ -372,10 +386,5 @@
     left: 0;
     top: 11vh;
     height: max-content !important;
-}
-
-/* home */
-.homeBannerContainer{
-    min-height: 70vh;
 }
 }
