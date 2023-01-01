@@ -14,7 +14,7 @@ const Home = () => {
                         <span style={{ fontWeight: "500", fontFamily: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", fontSize: "135%", color: "rgb(203,4,115)", letterSpacing: "1px", whiteSpace: "nowrap" }}> PARLOUR </span>
                     </h4>
                     <p className="bannerText mt-2" style={{ width: "100%", textAlign: "center", color: "grey" }}> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate omnis laborum eos ratione! Rerum cupiditate aperiam placeat temporibus nam quisquam? Quod earum numquam impedit veritatis dicta itaque. </p>
-                    <div className="btnContainer mt-4 mb-2 px-2 py-1" style={{ width: "100%", display: "flex", justifyContent: "center", gap: "36px", marginTop: "16px" }}>
+                    <div className="btnContainer mt-2 mb-2 px-2 py-1" style={{ width: "100%", display: "flex", justifyContent: "center", gap: "36px", marginTop: "16px" }}>
                         <button className="btn" style={{ borderRadius: "20px", border: "2px double white", fontWeight: "700", color: "white", background: "rgb(203,4,115)", padding: "4px 20px" }}>Contact</button>
                         <button className="btn" style={{ borderRadius: "20px", border: "2px double grey", fontWeight: "700", color: "grey", background: "white", padding: "4px 20px" }}>Explore</button>
                     </div>

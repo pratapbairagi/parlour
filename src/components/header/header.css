@@ -146,6 +146,9 @@
 .homeBannerContainer .row .col:nth-child(1){
     padding-top: 2% !important;
 }
+.homeBannerContainer .row .col:nth-child(2){
+    justify-content: flex-start !important;
+}
 .bannerText{
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -266,6 +269,10 @@
     position: relative;
     top: 0;
     left: 0;
+}
+/* home */
+.homeBannerContainer .row .col:nth-child(2){
+    justify-content: center !important;
 }
 /* .homeBannerContainer .row .col img{
     max-width: 35%;
