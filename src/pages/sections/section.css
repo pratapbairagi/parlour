@@ -1,24 +1,26 @@
 .sectionContainer{
     padding: 2px 8px 0 20px !important;
-    background-color: aliceblue;
+    background-image: linear-gradient(to bottom, aliceblue, white);
 
     /* margin: 0 !important; */
 }
 .sectionContainer h3{
     position: relative;
     padding: 6px 16 6px 6px !important;
-    color: green;
+    color: rgb(203, 4, 115);
     margin: auto !important;
-    margin-top: 52px !important;
+    margin-top: 58px !important;
     text-align: center !important;
-
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .sectionContainer h3::before{
     position: absolute;
     content: " " !important;
     width: 50% !important;
     height: 3px !important;
-    background-color: red;
+    /* background-color: red; */
     left: -6px;
 }
 .sectionContainer h3::after{
@@ -26,7 +28,6 @@
     content: " " !important;
     width: 50% !important;
     height: 3px !important;
-    background-color: red;
     bottom: 0;
     right: -6px;
     bottom: -6px;
@@ -35,7 +36,6 @@
     justify-content: start;
     column-gap: 32px;
     row-gap: 6px;
-    background-color: aliceblue;
     padding: 16px 6px !important;
     overflow-x: scroll;
 }
