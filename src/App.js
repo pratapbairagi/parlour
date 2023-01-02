@@ -10,6 +10,7 @@ import Header from './components/header/header';
 import { useState } from 'react';
 import DetailsView from './pages/detailsView';
 import Footer from './components/footer/footer';
+import Testimonial from './pages/textimonial/testimonial';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
       <Route exact path='/' element={<Layout search={search}/>} />
       <Route exact path='/view/:id' element={<DetailsView/>} />
 
-        {/* <Route path='/home' element={<Home/>} /> */}
+        <Route path='/testimonial' element={<Testimonial/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/contact' element={<Contacts/>} />
         <Route path='/section' element={<Sections search={search}/>} />

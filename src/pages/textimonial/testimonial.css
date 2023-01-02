@@ -1,0 +1,116 @@
+.testimonial-container{
+    width: max-content;
+    height: max-content !important;
+    padding-top: 10vh !important;
+    overflow: scroll !important;
+    padding: 10px 0 !important;
+}
+.testimonial-container .row{
+    display: flex !important;
+    min-width: 100% !important;
+    width: max-content !important;
+    padding: 8px !important;
+    overflow: scroll !important;
+    column-gap: 8px;
+}
+.testimonial-container .row .col{
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 4, 115);
+    width: 90%;
+    aspect-ratio: 1/.85;
+    box-shadow: 0 2px 3px grey;
+    /* border: 10px double black; */
+    /* border-radius: 8px; */
+}
+.testimonial-container .row .col::before{
+    position: absolute;
+    content: " " !important;
+    height: 100% !important;
+    width: 90px;
+    height: 100px !important;
+    /* aspect-ratio: 1/1; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 5%;
+    left: 13%;
+    z-index: 5;
+    border-radius: 6px;
+    box-shadow: 0 0 0 2px whitesmoke;
+    background-image: url('/public/images/review-girl1.jpg');
+}
+.testimonial-container .row .col::after{
+    position: absolute;
+    content: " " !important;
+    height: 100% !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: black;
+    clip-path: polygon(0 61%, 100% 39%, 100% 100%, 0% 100%);
+
+}
+.testimonial-card{
+    width: 95%;
+    height: 90%;
+    height: max-content !;
+    border: 1px solid blue;
+    background-color: white;
+    border-radius: 10px;
+    clip-path: polygon(0 25%, 100% 0, 100% 79%, 81% 79%, 81% 92%, 61% 80%, 0 80%);
+    z-index: 3;
+    padding: 5px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 10px;
+}
+.image-container{
+    border: 1px solid green;
+    width: 25%;
+    aspect-ratio: 1/1.2;
+    position: absolute;
+    z-index: 7;
+}
+.review-person-details{
+    width: 52%;
+    float: right;
+    /* border: 1px solid red; */
+    margin-top: 35px !important;
+}
+.review-person-details .name{
+    display: flex;
+    column-gap: 6px;
+}
+.review-person-details .name span{
+    font-size: 70%;
+    font-weight: 700;
+    color: rgb(215, 4, 115);
+    letter-spacing: 1px;
+}
+.review-person-details h6{
+    font-size: 80%;
+    font-weight: 600;
+    color: grey;
+}
+.stars svg{
+    color: red;
+    fill: red;
+}
+.review-text{
+    height: 32%;
+    top: 20px;
+    overflow: scroll;
+}
+.review-text p{
+    width: 100%;
+    color: rgb(215, 4, 115);
+    font-weight: 500;
+    font-size: 80%;
+}
