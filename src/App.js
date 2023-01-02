@@ -9,6 +9,7 @@ import PageNotFound from './pages/page_not_found';
 import Header from './components/header/header';
 import { useState } from 'react';
 import DetailsView from './pages/detailsView';
+import Footer from './components/footer/footer';
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Header searchData={setSearch}/>
+      
+
       {/* <Layout/> */}
       <Routes>
       <Route exact path='/' element={<Layout search={search}/>} />
@@ -30,6 +33,7 @@ function App() {
         <Route path='*' element={<PageNotFound/>} />
 
       </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );
