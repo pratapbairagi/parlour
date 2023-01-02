@@ -26,8 +26,8 @@ const Home = () => {
                 </div>
                 <div className="col col-12 col-md-6 col-lg-6 col-xl-6" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", position: "relative" }}>
                     <h4 className="text home_heading" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", columnGap: "8px", width: "95%" }}>
-                        <span style={{ fontWeight: "500", fontFamily: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", fontSize: "140%", color: "white", letterSpacing: "1px", whiteSpace: "nowrap" }}> WELCOME TO </span>
-                        <span style={{ fontWeight: "500", fontFamily: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", fontSize: "135%", color: "black", letterSpacing: "1px", whiteSpace: "nowrap" }}> PARLOUR </span>
+                        <span style={{ fontWeight: "700", fontFamily: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", fontSize: "140%", color: "white", letterSpacing: "1px", whiteSpace: "nowrap" }}> WELCOME TO </span>
+                        <span style={{ fontWeight: "700", fontFamily: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", fontSize: "135%", color: "black", letterSpacing: "1px", whiteSpace: "nowrap" }}> PARLOUR </span>
                     </h4>
                     <p className="bannerText mt-1" style={{ width: "90%", textAlign: "center", color: "whitesmoke"}}> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate omnis laborum eos ratione! Rerum cupiditate aperiam placeat temporibus nam quisquam? Quod earum numquam impedit veritatis dicta itaque. </p>
                     <div className="btnContainer mt-1 mb-2 px-2 py-1" style={{ width: "100%", display: "flex", justifyContent: "center", gap: "36px", marginTop: "16px" }}>

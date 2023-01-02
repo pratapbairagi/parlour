@@ -1,5 +1,5 @@
 .sectionContainer{
-    padding: 2px 8px 0 20px !important;
+    padding: 2px 8px 0 2px !important;
     background-image: linear-gradient(to bottom, aliceblue, white);
 
     /* margin: 0 !important; */
@@ -9,7 +9,7 @@
     padding: 6px 16 6px 6px !important;
     color: rgb(203, 4, 115);
     margin: auto !important;
-    margin-top: 58px !important;
+    margin-top: 16px !important;
     text-align: center !important;
     font-weight: 500;
     letter-spacing: 2px;

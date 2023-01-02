@@ -19,12 +19,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(215, 4, 115);
+    background-color: pink;
     width: 90%;
     aspect-ratio: 1/.85;
     box-shadow: 0 2px 3px grey;
-    /* border: 10px double black; */
-    /* border-radius: 8px; */
 }
 .testimonial-container .row .col::before{
     position: absolute;
@@ -32,7 +30,6 @@
     height: 100% !important;
     width: 90px;
     height: 100px !important;
-    /* aspect-ratio: 1/1; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,15 +48,13 @@
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: black;
+    background-color: rgb(215, 4, 115);
     clip-path: polygon(0 61%, 100% 39%, 100% 100%, 0% 100%);
-
 }
 .testimonial-card{
     width: 95%;
     height: 90%;
     height: max-content !;
-    border: 1px solid blue;
     background-color: white;
     border-radius: 10px;
     clip-path: polygon(0 25%, 100% 0, 100% 79%, 81% 79%, 81% 92%, 61% 80%, 0 80%);
