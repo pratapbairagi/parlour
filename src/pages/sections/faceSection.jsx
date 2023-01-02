@@ -10,7 +10,7 @@ const FaceSection = ({ id, data, index}) => {
             {data.length > 0 && data.map((v, i) => {
                 return <div key={i} className="row d-flex flex-wrap mt-0" style={{ background: `${ params.pathname == "/section" ? i % 2 === 0 ? "white" : params.pathname == "/section" ? "aliceblue" : "white" : index % 2 == 0 ? "aliceblue" : "white"}`, padding: "12px 4px", display: "flex", justifyContent: "center", minWidth: "240px", width: `${params.pathname == "/section" ? "100%" : "100%"}` }}>
                     <NavLink  to={`/view/${v.id}`} className={`col ${params.pathname == "/section" && "col-12 col-md-10 col-lg-6 col-xl-5 p-2"} order-1 order-md-1  ${i % 2 === 0 ? "order-lg-2 order-xl-2" : "order-lg-1 order-xl-1"}`} style={{ border: "2px solid rgb(203,4,115)", padding:"5px", position:"relative" }}>
-                        <span style={{ padding: "2px 8px",  letterSpacing:"1px", background: "rgb(203,4,115)", fontWeight: "600", color: "white", position:"absolute" }}>{v.title}</span>
+                        <span style={{ padding: "2px 8px",  letterSpacing:"1px", background: "pink", fontWeight: "600", color: "white", position:"absolute" }}>{v.title}</span>
                         <img src={v.image} style={{ width: "100%", aspectRaio: "1/1" }} alt="" />
                     </NavLink>
 
