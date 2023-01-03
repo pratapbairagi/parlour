@@ -1,0 +1,171 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 16px 0 !important;
+}
+.contact-container h2{
+    width: 100%;
+}
+
+.contact-header{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding:  8px 12px !important;
+
+}
+.contact-header h5{
+    width: 100%;
+    color: rgb(215, 4, 115);
+    font-weight: 600;
+    /* width: 98%; */
+}
+.row-container{
+    background-color: black;
+    display: flex !important;
+    width: 96% !important;
+    max-width: 800px;
+    height: 90vh !important;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    padding: 0 32px !important;
+}
+.filledInformation{
+    height: 65% !important;
+    position: absolute;
+    left: 6%;
+    width: 30% !important;
+    background-color: rgb(215, 4, 115) !important;
+}
+.contact-container .row-container .contact-form{
+    background-color: white;
+    height: 75% !important;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 16px 0 !important;
+}
+.contact-container .row-container .row{
+    width: 80% !important;
+    row-gap: 14px;
+}
+
+.contact-form .row .col{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .row .col label{
+    font-size: 80%;
+    font-weight: 600;
+    color: rgb(215, 4, 115);
+    letter-spacing: 1px;
+}
+.contact-container .row-container .row .col input{
+    height: 60%;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    outline: none;
+    padding: 0 8px;
+}
+.filledInformation-row{
+    width: 100% ; 
+    display:flex;
+    flex-wrap:wrap;
+    row-gap: 16px;
+    padding: 10% 5% !important;
+}
+.filledInformation-columns{
+    width:100%; 
+    display:flex;
+}
+.filledInformation-columns:last-child{
+    column-gap: 8px;
+    position: absolute;
+    bottom: 4px;
+    left: 2%;
+    width: 96%;
+    padding: 8px 16px;
+    color: rgb(215, 4, 115);
+    background-color: white;
+}
+.filledInformation-columns .col{
+     display:flex; 
+     justify-content:center; 
+    color:white;
+    font-size: 65% !important;
+}
+
+.filledInformation-columns .col:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    font-size:80%;
+    font-weight:500;
+    color:white;
+}
+@media only screen and ( max-width: 767px){
+.contact-container{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 !important;
+}
+    .row-container{
+        flex-direction: column;
+        width: 100% !important;
+        position: relative;
+        height: 92vh !important;
+        display: flex;
+        justify-content: end;
+        padding: 16px 4px !important;
+    }
+    .filledInformation{
+        position: absolute;
+        z-index: 4;
+        width: 78% !important;
+        height: 30% !important;
+        top: 11%;
+        left: 11%;
+        padding: 0 !important;
+        margin-left: 0 !important;
+        background-color: rgb(215, 4, 115) !important;
+    }
+.filledInformation-row{
+    row-gap: 8px;
+    padding: 5% 5% !important;
+}
+.contact-container .row-container .contact-form{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end ;
+    justify-content: center;
+    width: 92%;
+    height: 70% !important;
+    padding: 8px 16px;
+
+}
+.contact-container .row-container .contact-form .row{
+    width: 90% !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    row-gap: 2px !important;
+}
+.contact-container .row-container .row .col input{
+    height: 60%;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    outline: none;
+    padding: 0 8px;
+}
+
+/* .filledInformation .row{
+} */
+
+}
