@@ -2,23 +2,20 @@ import "./contact.css"
 
 const Contacts = () => {
     return (
-        <div className="container-fluid contact-container" style={{ minHeight: "100vh" }}>
-            <h2 className="my-2" style={{width:"max-content", color:"rgb(215, 4, 115)", fontWeight:"600"}}>Contact</h2>
+        <div className="container-fluid contact-container">
+            <h2 className="">Contact</h2>
             <div className="row-container">
 
-
-
-
-                <div className="filledInformation p-0">
+                <div className="filledInformation ">
                     <div className="filledInformation-row">
                         
                         <div className="col col-12 d-flex contact-info-container">
                             <div className="contact-info">
-                                <h5 className="px-1" style={{fontSize:"90%", fontWeight:"600", color:"white"}}>Contact Info</h5>
+                                <h5 className="">Contact Info</h5>
                             </div>
                         </div>
 
-                        <div className="filledInformation-columns p-0 m-0">
+                        <div className="filledInformation-columns">
                             <div className="address-icon col col-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt" viewBox="0 0 16 16">
                                     <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
@@ -105,7 +102,7 @@ const Contacts = () => {
                         </div>
 
                         <span className="mt-2">
-                            <button className="" style={{ padding: "2px 16px", fontSize: "80%", border: "none", background: "rgb(215, 4, 115)", color: "white", fontWeight: "600", letterSpacing: "1px" }}>SEND</button>
+                            <button className="" style={{ padding: "5px 24px", fontSize: "80%", border: "none", background: "rgb(215, 4, 115)", color: "white", fontWeight: "600", letterSpacing: "1px" }}>SEND</button>
                         </span>
                     </div>
                 </form>

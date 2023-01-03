@@ -6,24 +6,17 @@
     margin: 16px 0 !important;
 }
 .contact-container h2{
-    width: 100%;
+    width:max-content;
+    color:rgb(215, 4, 115);
+    font-weight:600;
 }
-
-.contact-header{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    padding:  8px 12px !important;
-
-}
-.contact-header h5{
-    width: 100%;
-    color: rgb(215, 4, 115);
-    font-weight: 600;
-    /* width: 98%; */
+.contact-info h5{
+    font-size:90%;
+    font-weight:600; 
+    color:white;
+    padding-left: 14px !important;
 }
 .row-container{
-    background-color: black;
     display: flex !important;
     width: 96% !important;
     max-width: 800px;
@@ -34,15 +27,15 @@
     padding: 0 32px !important;
 }
 .filledInformation{
-    height: 65% !important;
+    height: 60% !important;
     position: absolute;
     left: 6%;
     width: 30% !important;
     background-color: rgb(215, 4, 115) !important;
 }
 .contact-container .row-container .contact-form{
-    background-color: white;
-    height: 75% !important;
+    background-color: pink;
+    height: 74% !important;
     width: 80%;
     display: flex;
     align-items: center;
@@ -51,14 +44,24 @@
 }
 .contact-container .row-container .row{
     width: 80% !important;
-    row-gap: 14px;
+    row-gap: 4px;
 }
 
 .contact-form .row .col{
     display: flex;
     flex-direction: column;
+    margin-top: 12px !important;
 }
-
+.contact-form .row .col:first-child{
+    margin-top: 6px !important;
+}
+.contact-header h5{
+    color: grey;
+    font-weight: 600;
+    font-size: 140%;
+    letter-spacing: 1px;
+    padding: 8px 0 !important;
+}
 .contact-form .row .col label{
     font-size: 80%;
     font-weight: 600;
@@ -72,12 +75,16 @@
     color: grey;
     outline: none;
     padding: 0 8px;
+    background-color: transparent;
+}
+.contact-container .row-container .row .col textarea{
+    background-color: transparent;
 }
 .filledInformation-row{
     width: 100% ; 
     display:flex;
     flex-wrap:wrap;
-    row-gap: 16px;
+    row-gap: 12px;
     padding: 10% 5% !important;
 }
 .filledInformation-columns{
@@ -87,7 +94,7 @@
 .filledInformation-columns:last-child{
     column-gap: 8px;
     position: absolute;
-    bottom: 4px;
+    bottom: 8px;
     left: 2%;
     width: 96%;
     padding: 8px 16px;
@@ -108,18 +115,24 @@
     font-weight:500;
     color:white;
 }
-@media only screen and ( max-width: 767px){
+@media only screen and ( max-width: 768px){
 .contact-container{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 0 !important;
 }
+.contact-info h5{
+    font-size:90%;
+    font-weight:600; 
+    color:white;
+    padding-left: 30px !important;
+}
     .row-container{
         flex-direction: column;
         width: 100% !important;
         position: relative;
-        height: 92vh !important;
+        height: 75vh !important;
         display: flex;
         justify-content: end;
         padding: 16px 4px !important;
@@ -128,8 +141,8 @@
         position: absolute;
         z-index: 4;
         width: 78% !important;
-        height: 30% !important;
-        top: 11%;
+        height: 35% !important;
+        top: 2%;
         left: 11%;
         padding: 0 !important;
         margin-left: 0 !important;
@@ -139,6 +152,11 @@
     row-gap: 8px;
     padding: 5% 5% !important;
 }
+.contact-form .row .col{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0 !important;
+}
 .contact-container .row-container .contact-form{
     position: relative;
     display: flex;
@@ -146,11 +164,11 @@
     align-items: end ;
     justify-content: center;
     width: 92%;
-    height: 70% !important;
+    height: 82% !important;
     padding: 8px 16px;
 
 }
-.contact-container .row-container .contact-form .row{
+.contact-form .row{
     width: 90% !important;
     display: flex !important;
     flex-wrap: wrap;
@@ -164,8 +182,5 @@
     outline: none;
     padding: 0 8px;
 }
-
-/* .filledInformation .row{
-} */
 
 }

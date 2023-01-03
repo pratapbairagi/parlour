@@ -26,7 +26,11 @@ const Footer = () => {
                             <form action="" className="mt-2">
                                 <div className="input-group input-group-sm">
                                     <input type="text" className="form-control" />
-                                    <span className="input-group-text btn btn-primary">Sent</span>
+                                    <span className="input-group-text btn btn-primary">
+                                        <svg style={{transform:"rotateZ(45deg)"}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-send" viewBox="0 0 16 16">
+                                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                                        </svg>
+                                    </span>
 
                                 </div>
                             </form>
@@ -73,7 +77,7 @@ const Footer = () => {
                 <div className="col col-lg-8 col-md-10 col-12">
                     <div className="footer-widget" style={{ display: "flex", flexDirection: "column", justifyContent: "start", alignItems: "start" }}>
                         <h6 className="mt-1" style={{ fontWeight: "600", color: "rgb(215, 4, 115)", width: "100%", }}>FOLLOW US ON</h6>
-                        <ul className="p-0 py-3 mt-0" style={{ width: "100%", columnGap: "16px", rowGap:"10px", display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "start" }}>
+                        <ul className="p-0 py-3 mt-0" style={{ width: "100%", columnGap: "16px", rowGap: "10px", display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "start" }}>
                             <li style={{ width: "max-content", fontSize: "90%" }}>
                                 <Link style={{ borderBottom: "1px solid", display: "flex", justifyContent: "center", padding: "3px 10px", alignItems: "center", columnGap: "6px", boxShadow: "0 0 0 2px ", color: "grey" }}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16">

@@ -1,10 +1,57 @@
+import { useEffect } from "react"
+import { useState } from "react"
 
 
-const BookingForm = ({ toggleForm, setToggleForm }) => {
-
+const BookingForm = ({ toggleForm, setToggleForm, bookingData }) => {
+console.log(bookingData)
     const toggleFormFunction = () =>{
         toggleForm == "flex" && setToggleForm("none")
     }
+
+    let [bookingDetail, setBookingDetail] = useState({
+        name : "",
+        number :Number() ,
+        mail :"",
+        address:"",
+        age: Number(),
+        booking_time:"",
+        booking_date:"",
+        now: (new Date()).toLocaleString(),
+        booked_for : ""
+    })
+
+    
+
+    useEffect(()=>{
+        if(bookingData != null){
+        setBookingDetail({...bookingDetail, booked_for:`${ bookingData.title}`})
+    }
+    },[bookingData])
+
+    const inputHandler = (e) =>{
+        let {name,value} = e.target
+
+        setBookingDetail({...bookingDetail, [name]: value})
+        console.log(bookingDetail)
+
+    }
+
+
+    const submitForm = () => {
+        window.open(`https://wa.me/8287889123?text=${
+            "name : "+bookingDetail.name+", "
+            +" number : "+bookingDetail.number+", "
+            +" address "+bookingDetail.address+", "
+            +" email : "+bookingDetail.mail+", "
+            +" age : "+bookingDetail.age+", "
+            +" booking time : "+bookingDetail.booking_time+", "
+            +" booking data : "+bookingDetail.booking_date+", "
+            +" booked at : "+bookingDetail.now+", "
+            +"booked for : "+bookingDetail.booked_for
+        }`)
+    }
+
+    
     return (
         <div className="container-fluid-fluid" style={{ display: `${toggleForm}`, flexDirection: "column", padding: "0 32px", alignItems: "center", justifyContent: "center", height: "100vh", width: "100%", left: "0", top: "0", position: "fixed", zIndex: "3", background: "rgba(0,0,0, .2)"}}>
             <div className="btn-container" style={{width:"100%", display:"flex", justifyContent:"end", padding:"0", maxWidth:"700px"}}>
@@ -26,7 +73,7 @@ const BookingForm = ({ toggleForm, setToggleForm }) => {
                                 </svg>
                             </label>
                         </div>
-                        <input type="text" className="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1" style={{ background: "transparent", border: "none" }} />
+                        <input type="text" name="name" onInput={inputHandler} className="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1" style={{ background: "transparent", border: "none" }} />
                     </div>
                 </div>
 
@@ -39,7 +86,7 @@ const BookingForm = ({ toggleForm, setToggleForm }) => {
                                 </svg>
                             </label>
                         </div>
-                        <input type="number" className="form-control" placeholder="Phone Number " aria-label="Username" aria-describedby="basic-addon1" style={{ background: "transparent", border: "none" }} />
+                        <input type="tel" name="number" onInput={inputHandler} className="form-control" placeholder="Phone Number " aria-label="Username" aria-describedby="basic-addon1" style={{ background: "transparent", border: "none" }} />
                     </div>
                 </div>
 
@@ -53,7 +100,7 @@ const BookingForm = ({ toggleForm, setToggleForm }) => {
                                 </svg>
                             </label>
                         </div>
-                        <input type="text" className="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" style={{ background: "transparent", border: "none" }} />
+                        <input type="mail" name="mail" onInput={inputHandler} className="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" style={{ background: "transparent", border: "none" }} />
                     </div>
                 </div>
 
@@ -68,7 +115,7 @@ const BookingForm = ({ toggleForm, setToggleForm }) => {
                                 </svg>
                             </span>
                         </div>
-                        <input type="text" className="form-control" placeholder="Full Address" aria-label="Username" aria-describedby="basic-addon1" style={{ background: "transparent", border: "none" }} />
+                        <input type="text" name="address" onInput={inputHandler} className="form-control" placeholder="Full Address" aria-label="Username" aria-describedby="basic-addon1" style={{ background: "transparent", border: "none" }} />
                     </div>
                 </div>
 
@@ -82,7 +129,7 @@ const BookingForm = ({ toggleForm, setToggleForm }) => {
                                 </svg>
                             </span>
                         </div>
-                        <input type="number" className="form-control" placeholder="age" aria-label="Username" aria-describedby="basic-addon1" style={{ background: "transparent", border: "none" }} />
+                        <input type="number" name="age" onInput={inputHandler} className="form-control" placeholder="age" aria-label="Username" aria-describedby="basic-addon1" style={{ background: "transparent", border: "none" }} />
                     </div>
                 </div>
 
@@ -95,11 +142,11 @@ const BookingForm = ({ toggleForm, setToggleForm }) => {
                                 </svg>
                             </label>
                         </div>
-                        <input className="form-control" type="date" name="" id="" style={{ background: "transparent", border: "none" }} />
-                        <input className="form-control" type="time" name="" id="" style={{ background: "transparent", border: "none" }} />
+                        <input className="form-control" type="date"  onInput={inputHandler} name="booking_date" id="" style={{ background: "transparent", border: "none" }} />
+                        <input className="form-control" type="time" onInput={inputHandler} name="booking_time" id="" style={{ background: "transparent", border: "none" }} />
                     </div>
                 </div>
-                <button className="btn mt-2 mx-auto" style={{ width: "99%", fontWeight: "600", letterSpacing: "1px", background: "white", color: "pink", fontSize: "130%" }}>Book</button>
+                <button className="btn mt-2 mx-auto" onClick={submitForm} style={{ width: "99%", fontWeight: "600", letterSpacing: "1px", background: "white", color: "pink", fontSize: "130%" }}>Book</button>
             </div>
 
         </div>

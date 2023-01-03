@@ -58,7 +58,7 @@ const DetailsView = () => {
                 <h2>No Data Found !</h2>
             }
 
-            <BookingForm toggleForm={toggleForm} setToggleForm={setToggleForm}/>
+            <BookingForm toggleForm={toggleForm} bookingData={selected} setToggleForm={setToggleForm}/>
 
         </div>
     )

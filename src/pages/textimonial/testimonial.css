@@ -21,24 +21,19 @@
     align-items: center;
     background-color: pink;
     width: 90%;
-    aspect-ratio: 1/.85;
+    aspect-ratio: 1/.7;
     box-shadow: 0 2px 3px grey;
 }
-.testimonial-container .row .col::before{
+.review-person-image{
     position: absolute;
     content: " " !important;
-    height: 100% !important;
-    width: 90px;
-    height: 100px !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 5%;
-    left: 13%;
+    width: 50px;
+    height: 60px !important;
+    top: 14%;
+    left: 20%;
     z-index: 5;
     border-radius: 6px;
     box-shadow: 0 0 0 2px whitesmoke;
-    background-image: url('/public/images/review-girl1.jpg');
 }
 .testimonial-container .row .col::after{
     position: absolute;
@@ -63,41 +58,40 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: end;
     row-gap: 10px;
 }
-.image-container{
-    border: 1px solid green;
-    width: 25%;
-    aspect-ratio: 1/1.2;
-    position: absolute;
-    z-index: 7;
-}
+
 .review-person-details{
-    width: 52%;
+    width: 62%;
     float: right;
-    /* border: 1px solid red; */
-    margin-top: 35px !important;
+    margin-top: 30px !important;
 }
 .review-person-details .name{
     display: flex;
     column-gap: 6px;
 }
-.review-person-details .name span{
-    font-size: 70%;
-    font-weight: 700;
+.review-person-details .name p{
+    font-size: 50%;
+    font-weight: bolder !important;
     color: rgb(215, 4, 115);
     letter-spacing: 1px;
 }
 .review-person-details h6{
-    font-size: 80%;
+    font-size: 70%;
     font-weight: 600;
     color: grey;
 }
-.stars svg{
-    color: red;
-    fill: red;
+.stars{
+    padding:  0 !important;
+    max-height: 16px;
+    display: flex;
+    margin-top: 2px !important;
 }
+.stars img{
+    margin: 0 !important;
+    padding: 0 !important;
+} 
 .review-text{
     height: 32%;
     top: 20px;
@@ -107,5 +101,5 @@
     width: 100%;
     color: rgb(215, 4, 115);
     font-weight: 500;
-    font-size: 80%;
+    font-size: 80%;    
 }
