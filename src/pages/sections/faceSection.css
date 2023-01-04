@@ -18,3 +18,10 @@
 .faceSection_container .row .col:hover .card_image_heart{
     display: block;
 }
+.card_image_stars{
+    position: absolute;
+    z-index: 3;
+    bottom: 15px;
+    left: 15px;
+}
+

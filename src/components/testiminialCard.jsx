@@ -31,7 +31,7 @@ const TestiminialCard = ({data}) => {
 
                         <div className="stars" style={{width:"max-content"}}>
                             {stars.length > 0 && stars.map((v,i)=>{
-                                return <img src="/images/fillStar.svg" key={i} style={{ width: "12px", height: "12px", color:"white", fill:"red" }} alt="" />
+                                return <img src="/images/fillStar.svg" key={i} style={{ width: "12px", height: "12px" }} alt="" />
                             })}
                             
                         </div>

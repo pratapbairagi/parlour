@@ -1,8 +1,7 @@
 import TestiminialCard from "../../components/testiminialCard";
 import "./testimonial.css";
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reviewDatas from "../../data/sectionData.json";
 
 const Testimonial = ({ data }) => {
