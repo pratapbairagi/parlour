@@ -1,9 +1,7 @@
-import { useEffect } from "react"
-import { useState } from "react"
-
+import { useEffect, useState } from "react"
 
 const BookingForm = ({ toggleForm, setToggleForm, bookingData }) => {
-console.log(bookingData)
+
     const toggleFormFunction = () =>{
         toggleForm == "flex" && setToggleForm("none")
     }
@@ -20,8 +18,6 @@ console.log(bookingData)
         booked_for : ""
     })
 
-    
-
     useEffect(()=>{
         if(bookingData != null){
         setBookingDetail({...bookingDetail, booked_for:`${ bookingData.title}`})
@@ -32,8 +28,6 @@ console.log(bookingData)
         let {name,value} = e.target
 
         setBookingDetail({...bookingDetail, [name]: value})
-        console.log(bookingDetail)
-
     }
 
 

@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="col col-6 col-lg-3 col-md-6 col-8 px-2 py-1" >
                     <div className="footer-about">
                         <div className="footer-logo">
-                            <Link style={{ display: "flex", justifyContebt: "center", alignItems: "center" }} >
+                            <Link to="/" style={{ display: "flex", justifyContebt: "center", alignItems: "center" }} >
                                 <img src="/images/navLogo2.jpeg" style={{ width: "28px" }} alt="" />
                                 <span style={{ fontWeight: "600", color: "rgb(215, 4, 115)" }}>HOME PARLOUR</span>
                             </Link>
@@ -43,13 +43,13 @@ const Footer = () => {
                         <h6 className="mt-2" style={{ fontWeight: "600", color: "rgb(215, 4, 115)" }}>SEARCHING FOR</h6>
                         <ul className="p-0 mt-1" style={{ textAlign: "left", display: "flex", flexDirection: "column", alignItems: "start", justifyContent: "start", justifyItems: "start" }}>
                             <li >
-                                <Link style={{ color: "grey", borderBottom: "1px solid grey" }}>Hair solutiio</Link>
+                                <Link to="/section#Hair" style={{ color: "grey", borderBottom: "1px solid grey" }}>Hair solutiio</Link>
                             </li>
                             <li>
-                                <Link style={{ color: "grey", borderBottom: "1px solid grey" }}>Face Solution</Link>
+                                <Link to="/section#Face" style={{ color: "grey", borderBottom: "1px solid grey" }}>Face Solution</Link>
                             </li>
                             <li>
-                                <Link style={{ color: "grey", borderBottom: "1px solid grey" }}>Feet & Hand</Link>
+                                <Link to="/section#Pedicure & Manicure" style={{ color: "grey", borderBottom: "1px solid grey" }}>Feet & Hand</Link>
                             </li>
                         </ul>
                     </div>
@@ -59,16 +59,16 @@ const Footer = () => {
                         <h6 className="mt-2" style={{ fontWeight: "600", color: "rgb(215, 4, 115)", width: "100%" }}>LINKS</h6>
                         <ul className="p-0 mt-1" style={{ textAlign: "left", width: "100%", display: "flex", flexDirection: "column", alignItems: "start", justifyContent: "start", justifyItems: "start" }}>
                             <li style={{ width: "90%", fontSize: "90%" }}>
-                                <Link style={{ borderBottom: "1px solid" }}>Contact Us</Link>
+                                <Link to="/contact" style={{ borderBottom: "1px solid" }}>Contact Us</Link>
                             </li>
                             <li style={{ width: "90%", fontSize: "90%" }}>
-                                <Link style={{ borderBottom: "1px solid" }}>Payment Methods</Link>
+                                <Link to="/payment/options" style={{ borderBottom: "1px solid" }}>Payment Methods</Link>
                             </li>
                             <li style={{ width: "90%", fontSize: "90%" }}>
-                                <Link style={{ borderBottom: "1px solid" }}>Home Service</Link>
+                                <Link to="/" style={{ borderBottom: "1px solid" }}>Home Service</Link>
                             </li>
                             <li style={{ width: "90%", fontSize: "90%" }}>
-                                <Link style={{ borderBottom: "1px solid" }}>Effects</Link>
+                                <Link to="/effects" style={{ borderBottom: "1px solid" }}>Effects</Link>
                             </li>
                         </ul>
                     </div>

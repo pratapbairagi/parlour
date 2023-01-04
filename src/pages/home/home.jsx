@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./home.css"
 
 const Home = () => {
@@ -31,7 +32,7 @@ const Home = () => {
                     </h4>
                     <p className="bannerText mt-1" style={{ width: "90%", textAlign: "center", color: "whitesmoke"}}> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate omnis laborum eos ratione! Rerum cupiditate aperiam placeat temporibus nam quisquam? Quod earum numquam impedit veritatis dicta itaque. </p>
                     <div className="btnContainer mt-1 mb-2 px-2 py-1" style={{ width: "100%", display: "flex", justifyContent: "center", gap: "36px", marginTop: "16px" }}>
-                        <button className="btn" style={{ borderRadius: "20px", border: "2px double white", fontWeight: "700", color: "white", background: "rgb(203,4,115)", padding: "4px 20px" }}>Contact</button>
+                        <Link to="/contact" className="btn" style={{ borderRadius: "20px", border: "2px double white", fontWeight: "700", color: "white", background: "rgb(203,4,115)", padding: "4px 20px" }}>Contact</Link>
                         <button className="btn" style={{ borderRadius: "20px", border: "2px double grey", fontWeight: "700", color: "grey", background: "white", padding: "4px 20px" }}>Explore</button>
                     </div>
                   
