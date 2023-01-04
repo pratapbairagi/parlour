@@ -288,12 +288,13 @@
         display: flex;
         width: max-content !important;
         background-color: transparent;
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4); 
     }
     .mid_nav li {
         width: 100% !important;
         padding: 4px 10px !important;
         background-color: transparent !important;
-        color: pink;
+        color: rgb(215, 4, 115);
         font-size: 13px;
     }
     .mid_nav li:hover{
