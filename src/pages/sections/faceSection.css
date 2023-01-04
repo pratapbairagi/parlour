@@ -14,7 +14,6 @@
     border-radius: 4px;
     padding: 8px;
     display: none;
-
 }
 .faceSection_container .row .col:hover .card_image_heart{
     display: block;

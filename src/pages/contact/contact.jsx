@@ -51,29 +51,28 @@ const Contacts = () => {
                         </span>
                         <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                             <label htmlFor="">User Name</label>
-                            <input type="text" name="user_name" id="" />
+                            <input type="text" name="user_name" id="" minLength="3" required  />
                         </div>
 
                         <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                             <label htmlFor="">Subject</label>
-                            <input type="text" name="user_subject" id="" />
+                            <input type="text" name="user_subject" id="" minLength="2" required  />
                         </div>
 
                         <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                             <label htmlFor="">Your E-Mail</label>
-                            <input type="email" name="user_email" id="" />
+                            <input type="email" name="user_email" id="" required  />
                         </div>
 
                         <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                             <label htmlFor="">Mobile Number</label>
-                            <input type="tel" name="user_number" id="" />
+                            <input type="tel" name="user_number" minLength="8" maxLength="10" id="" required  />
                         </div>
 
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <label htmlFor="">Message</label>
-                            <textarea type="text" name="message" id="" />
+                            <textarea type="text" name="message" id="" minLength="10" required  />
                         </div>
-
                         <span className="mt-2">
                             <button className="" type="submit" style={{ padding: "5px 24px", fontSize: "80%", border: "none", background: "rgb(215, 4, 115)", color: "white", fontWeight: "600", letterSpacing: "1px" }}>SEND</button>
                         </span>

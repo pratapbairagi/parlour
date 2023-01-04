@@ -4,30 +4,46 @@
 }
 .sectionContainer h3{
     position: relative;
-    padding: 6px 16 6px 6px !important;
+    padding: 0 10px !important;
     color: rgb(203, 4, 115);
     margin: auto !important;
     margin-top: 16px !important;
     text-align: center !important;
+    height: 38px;
     font-weight: 500;
     letter-spacing: 2px;
+    border: 2px solid rgb(203, 4, 115);
+    border-top: none;
+    border-bottom: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .sectionContainer h3::before{
     position: absolute;
     content: " " !important;
-    width: 50% !important;
+    width: 20% !important;
     height: 3px !important;
-    left: -6px;
+    left: -20%;
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    border-right: 21px solid rgb(203, 4, 115);
+    top: -2px;
+
+    /* top: calc( (100% - 3px)/2) ; */
+    /* background-color: rgb(203, 4, 115); */
+    /* border: 3px solid red; */
 }
 .sectionContainer h3::after{
     position: absolute;
     content: " " !important;
-    width: 50% !important;
+    width: 20% !important;
     height: 3px !important;
-    bottom: 0;
-    right: -6px;
-    bottom: -6px;
+    right: -20%;
+    /* background-color: rgb(203, 4, 115); */
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    border-left: 21px solid rgb(203, 4, 115);
+    top: -2px;
+    /* top: calc( (100% - 2px)/2); */
 }
 .sectionContainerInner{
     justify-content: start;

@@ -14,7 +14,7 @@ const Sections = ({search}) =>{
         <div className="container-fluid p-0">
         <div className="container-fluid sectionContainer d-flex flex-column mt-lg-0 mt-xl-0">
             <h3>Category</h3>
-            <div className="d-flex sectionContainerInner justify-content-lg-center justify-content-xl-center">
+            <div className="d-flex sectionContainerInner justify-content-lg-center justify-content-xl-center mt-2">
                 <a href="#Face" className="setctionContents">
                     <img src="/images/facial_image_logo.jpeg" alt="" />
                 <span>face</span>
