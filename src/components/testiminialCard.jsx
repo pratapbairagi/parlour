@@ -1,6 +1,20 @@
+import { useEffect } from "react"
+import { useState } from "react"
 
 
-const TestiminialCard = () => {
+const TestiminialCard = ({data}) => {
+    let [stars, setStars] = useState([])
+
+    useEffect(()=>{
+        if(data != undefined){
+            data.rating > 0 && data.rating < 2 ? setStars([1]) :
+            data.rating > 1 && data.rating < 3 ? setStars([1,2]) :
+            data.rating > 2 && data.rating < 4 ? setStars([1,2,3]) :
+            data.rating > 3 && data.rating < 5 ? setStars([1,2,3,4]) :
+            data.rating > 4 ? setStars([1,2,3,4,5]) : setStars([])
+        }
+    },[data])
+
     return (
             <div className="col col-11 col-md-8 col-lg-6 col-xl-4" style={{display:"flex", alignItems:"end"}}>
                 
@@ -10,23 +24,22 @@ const TestiminialCard = () => {
 
                     <div className="review-person-details">
                         <h5 className="name">
-                            <p>FIRST</p>
-                            <p>LAST</p>
+                            <p>Mrs.</p>
+                            <p>{data.user}</p>
                         </h5>
                         <h6 className="reviewer">Customer</h6>
 
-                        <div className="stars">
-                            <img src="/images/fillStar.svg" style={{ width: "12px", height: "12px" }} alt="" />
-                            <img src="/images/fillStar.svg" style={{ width: "12px", height: "12px" }} alt="" />
-                            <img src="/images/fillStar.svg" style={{ width: "12px", height: "12px" }} alt="" />
-                            <img src="/images/fillStar.svg" style={{ width: "12px", height: "12px" }} alt="" />
-                            <img src="/images/halfFillStar.svg" style={{ width: "12px", height: "12px" }} alt="" />
+                        <div className="stars" style={{width:"max-content"}}>
+                            {stars.length > 0 && stars.map((v,i)=>{
+                                return <img src="/images/fillStar.svg" key={i} style={{ width: "12px", height: "12px", color:"white", fill:"red" }} alt="" />
+                            })}
+                            
                         </div>
 
                     </div>
 
                     <div className="review-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam modi repellat esse consequuntur vel sit corrupti mollitia quaerat saepe alias dolorum, ducimus necessitatibus. Officiis.</p>
+                        <p>{data.review}</p>
                     </div>
                 </div>
             </div>

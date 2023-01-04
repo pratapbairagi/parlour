@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom"
 import BookingForm from "../components/bookingForm/BookingForm";
 import sectionDatas from "../data/sectionData.json"
+import Testimonial from "./textimonial/testimonial";
 
 const DetailsView = () => {
     const { id } = useParams();
@@ -57,7 +58,10 @@ const DetailsView = () => {
             </div> :
                 <h2>No Data Found !</h2>
             }
-
+            <div className="container-fluid">
+                <h5 className="mt-2" style={{ fontSize:"140%", fontWeight:"600", color:"rgb(215,4,115)", letterSpacing:"1px", borderLeft:"2px solid rgb(215,4,115)", paddingLeft:"8px"}}>Reviews</h5>
+                { selected != null && <Testimonial data={selected}/> }
+            </div>
             <BookingForm toggleForm={toggleForm} bookingData={selected} setToggleForm={setToggleForm}/>
 
         </div>
