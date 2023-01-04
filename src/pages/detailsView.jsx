@@ -24,8 +24,8 @@ const DetailsView = () => {
 
             {selected != null ? <div className="row d-flex flex-wrap mt-1" style={{ background: `aliceblue`, padding: "12px 8px", display: "flex", justifyContent: "center", minWidth: "240px" }}>
                 <div className={`col col-12 col-md-10 col-lg-6 col-xl-5 p-2 order-1 order-md-1 order-lg-1 order-xl-1 my-2 mb-4 m-lg-0 m-xl-0`} style={{ border: "2px solid rgb(215, 4, 115)", background: "transparent" }}>
-                    <span style={{ padding: "2px 8px", background: "rgb(215, 4, 115)", fontWeight: "500", color: "white" }}>{selected.title}</span>
-                    <img src={`/${selected.image}`} style={{ width: "100%", aspectRaio: "1/1" }} alt={selected.title} />
+                    <span style={{ padding: "2px 8px", background: "rgb(215, 4, 115)", fontWeight: "500", color: "white", position:"absolute", zIndex:"3" }}>{selected.title}</span>
+                    <img src={`/${selected.image}`} style={{ width: "100%", height:"100%" }} alt={selected.title} />
                 </div>
 
                 <div className={`col col-12 col-md-10 col-lg-6 col-xl-5 order-2 order-md-2 order-lg-2 order-xl-2 d-flex`} style={{ background: "white" }}>
