@@ -3,8 +3,10 @@ import "./contact.css"
 import FilledUnformation from "./filledInformation_card";
 import emailjs from '@emailjs/browser';
 import { useState } from "react";
-import SuccessPopup from "../../components/atoms/successPopup";
+import SuccessPopup from "../../components/ui/successPopup";
 import { useEffect } from "react";
+import Button from "../../components/ui/button";
+import FormInput from "../../components/ui/formInput";
 
 
 const Contacts = () => {
@@ -25,16 +27,16 @@ const Contacts = () => {
 
         emailjs.sendForm('service_parlour', 'template_bthp4lm', form.current, 'RHLBORJ6kbGnt_Wnq')
             .then((result) => {
-                // console.log(result.text);
-                // console.log("message sent successfully !")
                 if (result.text == "OK") {
                     return setSuccess(true)
                 }
                 e.target.reset()
             }, (error) => {
-                // console.log(error.text);
+            
             });
     }
+
+    const styleClass_div = "col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
     return (
         <div className="container-fluid contact-container">
             {success == true && <SuccessPopup success={success}/>}
@@ -49,24 +51,24 @@ const Contacts = () => {
                         <span className="contact-header">
                             <h5>Send a message</h5>
                         </span>
-                        <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div className={styleClass_div}>
                             <label htmlFor="">User Name</label>
-                            <input type="text" name="user_name" id="" minLength="3" required  />
+                            <FormInput type={"text"} name={"user_name"} minLength={3} maxLength={15} required={true}/>
                         </div>
 
-                        <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div className={styleClass_div}>
                             <label htmlFor="">Subject</label>
-                            <input type="text" name="user_subject" id="" minLength="2" required  />
+                            <FormInput type={"text"} name={"user_subject"} minLength={2} maxLength={25} required={true}/>
                         </div>
 
-                        <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div className={styleClass_div}>
                             <label htmlFor="">Your E-Mail</label>
-                            <input type="email" name="user_email" id="" required  />
+                            <FormInput type={"email"} name={"user_email"} minLength={null} maxLength={null} required={true}/>
                         </div>
 
-                        <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div className={styleClass_div}>
                             <label htmlFor="">Mobile Number</label>
-                            <input type="tel" name="user_number" minLength="8" maxLength="10" id="" required  />
+                            <FormInput type={"tel"} name={"user_number"} minLength={8} maxLength={10} required={true}/>
                         </div>
 
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -74,13 +76,12 @@ const Contacts = () => {
                             <textarea type="text" name="message" id="" minLength="10" required  />
                         </div>
                         <span className="mt-2">
-                            <button className="" type="submit" style={{ padding: "5px 24px", fontSize: "80%", border: "none", background: "rgb(215, 4, 115)", color: "white", fontWeight: "600", letterSpacing: "1px" }}>SEND</button>
+                            <Button text={"Submit"} functions={null} type={"submit"} css={{padding: "5px 24px", fontSize: "80%", border: "none", background: "rgb(215, 4, 115)", color: "white", fontWeight: "600", letterSpacing: "1px", borderRadius:"0"}}/>
                         </span>
                     </div>
                 </form>
             </div>
-            {/* <ContactUs /> */}
-            {/* <a href="mailto:`{pratapbairagi4cgshop@gmail.com}`?subject={subject}&body={body}">Click to Send an Email</a> */}
+           
         </div>
     )
 }

@@ -1,12 +1,10 @@
-import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./faceSection.css";
+import {StarFill, StarHalf} from "react-bootstrap-icons";
+import {HeartFill} from "react-bootstrap-icons"
 
 const FaceSection = ({ id, data, index }) => {
     const params = useLocation()
-
-    let [stars, setStars] = useState([])
-    let [rating, setRating] = useState(0)
 
     return (<div id={id} className={`container-fluid faceSection_container ${index === 0 && "mt-2"} `} style={{ padding: "8px 4px 10px 4px", background: `${index != "undefined" && index % 2 == 0 ? "aliceblue" : " white"}` }}>
         {data.length > 0 && <h4 className="mt-1 mb-1" style={{ width: "100%", borderLeft: "2px solid rgb(203,4,115)", fontSize: "150%", padding: "2px 6px", color: "rgb(203,4,115)", fontWeight: "600", letterSpacing: "1px" }}>{data[0].category}</h4>}
@@ -17,23 +15,19 @@ const FaceSection = ({ id, data, index }) => {
                         <span style={{ padding: "2px 8px", letterSpacing: "1px", background: "pink", fontWeight: "600", color: "white", position: "absolute", zIndex: "3" }}>{v.title}</span>
                         
                         <img src={v.image} style={{ width: "100%", height: "100%", transition: "0.3s ease-in-out" }} alt={v.title} />
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-heart-fill card_image_heart" viewBox="0 0 16 16">
-                            <path fillRule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                        </svg>
+                        <HeartFill className="card_image_heart"/>
 
                         <div className="stars card_image_stars" style={{width:"max-content"}}>
-                        <img src="/images/fillStar.svg" style={{ width: "12px", height: "12px" }} alt="" />
-                        <img src="/images/fillStar.svg" style={{ width: "12px", height: "12px" }} alt="" />
-                        <img src="/images/fillStar.svg" style={{ width: "12px", height: "12px" }} alt="" />
-                        <img src="/images/fillStar.svg" style={{ width: "12px", height: "12px" }} alt="" /> 
-                        <img src="/images/halfFillStar.svg" style={{ width: "12px", height: "12px" }} alt="" />    
-
+                            <StarFill color="white"/>
+                            <StarFill color="white"/>
+                            <StarFill color="white"/>
+                            <StarFill color="white"/>
+                            <StarHalf color="white"/>
+                        {/* <img src="/images/fillStar.svg" style={{ width: "12px", height: "12px" }} alt="" />  */}
                         </div>
 
                     </NavLink>
-                    { 
-
-                    }
+            
                     <div className={`col col-12 col-md-10 col-lg-6 col-xl-5 order-2 order-md-2  ${i % 2 === 0 ? "order-lg-1 order-xl-1" : "order-lg-2 order-xl-2"} ${params.pathname == "/section" ? "d-flex" : "d-none"}`}>
                         <div className="card_container" style={{ borderRadius: "2px 24px 2px 24px", height: "100%", backgroundColor: "transparent", padding: "12px 6px", display: "flex", width: "100%", flexDirection: "column", gap: "3px" }}>
                             <h4 style={{ width: "100%", minWidth: "100%", color: `${i % 2 === 0 ? "grey" : "teal"}`, letterSpacing: "1px", maxWidth: "max-content", padding: "2px 8px", alignSelf: `${i % 2 === 0 ? "start" : "start"}`, fontSize: "170%", fontWeight: "600", borderRight: `${i % 2 === 0 ? "none" : "none"}`, borderLeft: `${i % 2 === 0 ? "2px solid red" : "2px solid red"}` }}>

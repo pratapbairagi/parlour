@@ -1,5 +1,5 @@
-import { useEffect } from "react"
-import { useState } from "react"
+import { useEffect,useState } from "react";
+import {StarFill} from "react-bootstrap-icons"
 
 
 const TestiminialCard = ({data}) => {
@@ -31,7 +31,7 @@ const TestiminialCard = ({data}) => {
 
                         <div className="stars" style={{width:"max-content"}}>
                             {stars.length > 0 && stars.map((v,i)=>{
-                                return <img src="/images/fillStar.svg" key={i} style={{ width: "12px", height: "12px" }} alt="" />
+                                return <StarFill key={i} style={{ width: "12px", height: "12px", color:"rgb(215,4,115)" }}/>
                             })}
                             
                         </div>
